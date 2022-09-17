@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block content %}
+    <div class="center txt-properties">
+        <h1>Login</h1>
+        <p>Enter your username and password here</p>
+
+        <form action="" class="form-properties">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <a class="links" href="{{ url_for('register')}}">Create account here</a>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+{% endblock%}
